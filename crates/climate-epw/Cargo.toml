@@ -1,0 +1,16 @@
+[package]
+name = "basetherm-climate-epw"
+version = "2.0.0"
+edition = "2021"
+publish = false
+
+[lints]
+workspace = true
+
+[features]
+default = ["parallel"]
+# Threads in the ADI sweeps; off for the WASM build (see docs/DESIGN.md, Architecture).
+parallel = ["basetherm-surface/parallel"]
+
+[dependencies]
+basetherm-surface = { path = "../surface", default-features = false }

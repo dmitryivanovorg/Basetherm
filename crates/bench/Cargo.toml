@@ -1,0 +1,17 @@
+[package]
+name = "basetherm-bench"
+version = "2.0.0"
+edition = "2021"
+publish = false
+
+[lints]
+workspace = true
+
+[dependencies]
+basetherm-basement = { path = "../basement" }
+basetherm-materials = { path = "../materials" }
+basetherm-surface = { path = "../surface" }
+
+[[bin]]
+name = "basement-timing"
+path = "src/main.rs"

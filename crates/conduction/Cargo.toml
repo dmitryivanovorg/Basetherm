@@ -1,0 +1,12 @@
+[package]
+name = "basetherm-conduction"
+version = "2.0.0"
+edition = "2021"
+publish = false
+
+[lints]
+workspace = true
+
+[dependencies]
+basetherm-grid = { path = "../grid" }
+basetherm-bc = { path = "../bc" }

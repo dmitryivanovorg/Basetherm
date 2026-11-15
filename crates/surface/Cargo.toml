@@ -1,0 +1,20 @@
+[package]
+name = "basetherm-surface"
+version = "2.0.0"
+edition = "2021"
+publish = false
+
+[lints]
+workspace = true
+
+[features]
+default = ["parallel"]
+# Threads in the ADI sweeps; off for the WASM build (see docs/DESIGN.md, Architecture).
+parallel = ["basetherm-adi/parallel"]
+
+[dependencies]
+basetherm-bc = { path = "../bc" }
+
+[dev-dependencies]
+basetherm-adi = { path = "../adi", default-features = false }
+basetherm-grid = { path = "../grid" }

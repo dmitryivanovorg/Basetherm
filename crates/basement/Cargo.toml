@@ -1,0 +1,25 @@
+[package]
+name = "basetherm-basement"
+version = "2.0.0"
+edition = "2021"
+publish = false
+
+[lints]
+workspace = true
+
+[features]
+default = ["parallel"]
+# Threads in the ADI sweeps; off for the WASM build (see docs/DESIGN.md, Architecture).
+parallel = ["basetherm-adi/parallel", "basetherm-climate-epw/parallel", "basetherm-farfield/parallel", "basetherm-freezing/parallel", "basetherm-periodic/parallel", "basetherm-surface/parallel"]
+
+[dependencies]
+basetherm-adi = { path = "../adi", default-features = false }
+basetherm-bc = { path = "../bc" }
+basetherm-climate-epw = { path = "../climate-epw", default-features = false }
+basetherm-farfield = { path = "../farfield", default-features = false }
+basetherm-freezing = { path = "../freezing", default-features = false }
+basetherm-grid = { path = "../grid" }
+basetherm-materials = { path = "../materials" }
+basetherm-mg = { path = "../mg" }
+basetherm-periodic = { path = "../periodic", default-features = false }
+basetherm-surface = { path = "../surface", default-features = false }

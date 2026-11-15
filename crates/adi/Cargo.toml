@@ -1,0 +1,22 @@
+[package]
+name = "basetherm-adi"
+version = "2.0.0"
+edition = "2021"
+publish = false
+
+[lints]
+workspace = true
+
+[features]
+default = ["parallel"]
+# Threads for the sweeps (rayon). Without it the same code runs on one thread, with identical results.
+parallel = ["dep:rayon"]
+
+[dependencies]
+rayon = { version = "1", optional = true }
+basetherm-grid = { path = "../grid" }
+basetherm-bc = { path = "../bc" }
+basetherm-conduction = { path = "../conduction" }
+
+[dev-dependencies]
+rayon = "1"

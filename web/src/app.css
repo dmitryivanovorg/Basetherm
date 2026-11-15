@@ -1,0 +1,28 @@
+:root {
+  --ink: #2b2b2e;
+  --muted: #74747a;
+  --brand: #3a3a3d;
+  --brand-dark: #1f1f22;
+  --line: #dcdcdf;
+  --panel: #ececee;
+  --chrome: #e4e4e7;
+  --surface: #f4f4f5;
+  --field: #fafafa;
+  --radius: 7px;
+}
+body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; margin: 0; color: var(--ink); background: var(--surface); }
+button {
+  font: inherit; padding: 0.3rem 0.8rem; cursor: pointer; color: var(--ink);
+  background: var(--field); border: 1px solid #cfcfd3; border-radius: var(--radius);
+  transition: background 0.12s, border-color 0.12s, box-shadow 0.12s;
+}
+button:hover:not(:disabled) { background: #e8e8ea; border-color: #a8a8ad; }
+button:focus-visible { outline: 2px solid #555; outline-offset: 1px; }
+button:disabled { cursor: default; opacity: 0.5; }
+input[type='text'], input[type='number'], select {
+  font: inherit; padding: 0.22rem 0.4rem; border: 1px solid #cfcfd3; border-radius: 5px; background: var(--field); color: var(--ink);
+}
+input:focus-visible, select:focus-visible { outline: 2px solid #555; outline-offset: 0; border-color: #555; }
+fieldset { border: 1px solid var(--line); border-radius: 10px; background: var(--panel); padding: 0.6rem 0.8rem 0.8rem; }
+legend { font-weight: 600; color: var(--brand-dark); padding: 0 0.4rem; font-size: 0.9rem; }
+a { color: var(--brand); }

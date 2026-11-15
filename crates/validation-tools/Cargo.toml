@@ -1,0 +1,17 @@
+[package]
+name = "basetherm-validation-tools"
+version = "2.0.0"
+edition = "2021"
+publish = false
+
+[lints]
+workspace = true
+
+[dependencies]
+basetherm-bc = { path = "../bc" }
+basetherm-grid = { path = "../grid" }
+basetherm-materials = { path = "../materials" }
+basetherm-mg = { path = "../mg" }
+basetherm-periodic = { path = "../periodic" }
+basetherm-adi = { path = "../adi" }
+basetherm-climate-epw = { path = "../climate-epw" }
