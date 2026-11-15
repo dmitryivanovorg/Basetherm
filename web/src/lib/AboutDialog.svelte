@@ -20,6 +20,14 @@
     limitations described in the Guide. You are responsible for checking them and for any use you make of them.
   </p>
 
+  <h3>License and source code</h3>
+  <p>
+    Basetherm is free software distributed under the
+    <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener">GNU General Public License v3.0</a>
+    (GNU GPLv3). You may redistribute and modify it under the terms of that license. Source code:
+    <a href="https://github.com/dmitryivanovorg/Basetherm" target="_blank" rel="noopener">github.com/dmitryivanovorg/Basetherm</a>.
+  </p>
+
   <h3>Copyright</h3>
   <p>
     © 2026 Dmitry Ivanov.

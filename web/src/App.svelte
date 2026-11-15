@@ -378,6 +378,8 @@
     <span class="dot">·</span>
     <a href="https://dmitryivanov.org" target="_blank" rel="noopener">dmitryivanov.org</a>
     <span class="dot">·</span>
+    <a href="https://github.com/dmitryivanovorg/Basetherm" target="_blank" rel="noopener">GitHub</a>
+    <span class="dot">·</span>
     <button class="link" onclick={() => (dialog = 'about')}>Disclaimer</button>
     <span class="spacer"></span>
     <span>Made in Melbourne with <span class="heart" aria-label="love">♥</span></span>
