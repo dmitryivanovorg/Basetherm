@@ -1,5 +1,3 @@
-
-  <h3>What it does</h3>
   <p>
     Basetherm simulates the heat flow between a building's basement (or slab on grade), the surrounding ground and the
     outdoor environment over a whole year, in three dimensions, with hourly weather data. It reports the heat loss of each room through
