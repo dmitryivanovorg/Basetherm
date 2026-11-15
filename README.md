@@ -41,4 +41,3 @@ The timings of the peak heat loss and gain in underground spaces can be signific
     <li>Partitions between rooms are adiabatic: rooms exchange heat only through the ground. Indoor temperatures are prescribed, not computed from a building energy balance.</li>
     <li>The ground surface has no snow cover, vegetation or shading by the building.</li>
     <li>The mesh is limited to 4 million cells.</li>
-test
