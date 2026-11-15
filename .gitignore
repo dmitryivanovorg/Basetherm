@@ -2,10 +2,6 @@
 node_modules
 dist
 refs/
-SoilHT/__history/
-SoilHT/*.dcu
-SoilHT/*.exe
-SoilHT/*.identcache
-
+SoilHT/*
 web/src/wasm/
 web/src/wasm-single/
