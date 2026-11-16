@@ -5,3 +5,6 @@ refs/
 SoilHT/*
 web/src/wasm/
 web/src/wasm-single/
+
+compile_and_upload.sh
+test_web.sh

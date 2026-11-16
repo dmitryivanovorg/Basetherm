@@ -2,7 +2,9 @@
     Basetherm simulates the heat flow between a building's basement (or slab on grade), the surrounding ground and the
     outdoor environment over a whole year, in three dimensions, with hourly weather data. It reports the heat loss of each room through
     its floor and walls, the annual thermal loads, the peak loss and gain, and the temperature field in the ground. Everything
-    runs in your browser using resources of your computer. Simulation inputs and outputs are not uploaded to the server.
+    runs in your browser using resources of your computer. Simulation inputs and outputs are not uploaded to the server. 
+    
+    Basetherm is aimed to be an easy-to-use standalone tool that helps engineers to accurately size mechanical systems for underground spaces as well as analyse insulation options and transient heat transfer.
   </p>
 
 <h3>Why use it</h3>
@@ -34,6 +36,11 @@ The timings of the peak heat loss and gain in underground spaces can be signific
     <li>Quarter-domain symmetry runs agree with full-domain runs within 0.1%.</li>
   </ul>
 
+<h3>Usage of LLMs for development</h3>
+  <p>
+I have used Large Language Models to write the code, run validation tests, and develop the user interface. Having said that, I have defined and am comfortable with the methods used in Basetherm, as I have previously spent quite some time researching this field. Overall, LLMs made it possible for version 2 of this tool to come alive, and hopefully, proper sizing of a couple of basements will offset the tokens used for its development.
+  </p>
+  
   <h3>Main limitations</h3>
   <ul>
     <li>Building outline must be rectilinear (edges along x and y). Curved or diagonal walls are not supported.</li>
@@ -41,3 +48,5 @@ The timings of the peak heat loss and gain in underground spaces can be signific
     <li>Partitions between rooms are adiabatic: rooms exchange heat only through the ground. Indoor temperatures are prescribed, not computed from a building energy balance.</li>
     <li>The ground surface has no snow cover, vegetation or shading by the building.</li>
     <li>The mesh is limited to 4 million cells.</li>
+    <li>Ground layers are strictly horizontal.</li>
+    <li>Foundation is simplified to a slab with or without insulaiton. No detailed modelling of footings etc.</li>
