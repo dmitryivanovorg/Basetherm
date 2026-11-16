@@ -4,7 +4,7 @@
     its floor and walls, the annual thermal loads, the peak loss and gain, and the temperature field in the ground. Everything
     runs in your browser using resources of your computer. Simulation inputs and outputs are not uploaded to the server. 
     
-    Basetherm is aimed to be an easy-to-use standalone tool that helps engineers to accurately size mechanical systems for underground spaces as well as analyse insulation options and transient heat transfer.
+  Basetherm is aimed to be an easy-to-use standalone tool that helps engineers to accurately size mechanical systems for underground spaces as well as analyse insulation options and transient heat transfer.
   </p>
 
 <h3>Why use it</h3>
